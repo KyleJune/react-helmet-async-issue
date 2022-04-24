@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["deno:file:///home/kyle/Projects/deno/react-helmet-issue/d.jsx"],
+  "sourcesContent": ["/** @jsx React.createElement */\n\nimport { React, Helmet } from \"./deps.js\";\nimport { ExampleContext } from \"./context.js\";\n\nconst D = () => {\n  const { message } = React.useContext(ExampleContext)\n  return (\n    <div>\n      <Helmet>\n        <title>D</title>\n      </Helmet>\n      <h2>D</h2>\n      <p>{message}</p>\n    </div>\n  )\n};\nexport default D;\n"],
+  "mappings": ";;;;;;;AAKA,IAAM,IAAI,MAAM;AACd,QAAM,EAAE,YAAY,GAAM,WAAW,cAAc;AACnD,SACE,iCAAC,aACC,iCAAC,SACC,iCAAC,eAAM,GAAC,CACV,GACA,iCAAC,YAAG,GAAC,GACL,iCAAC,WAAG,OAAQ,CACd;AAEJ;AACA,IAAO,YAAQ;",
+  "names": []
+}
