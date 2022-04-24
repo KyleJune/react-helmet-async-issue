@@ -27,6 +27,8 @@ const App = () => {
           { page === "A" ? <A /> : null }
           { page === "B" ? <B /> : null }
           { page === "C" ? <C /> : null }
+        </React.Suspense>
+        <React.Suspense fallback={<p>Loading...</p>}>
           { page === "D" ? <D /> : null }
         </React.Suspense>
       </ExampleContext.Provider>

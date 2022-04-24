@@ -5,13 +5,13 @@ await esbuild.build({
   plugins: [denoPlugin()],
   entryPoints: [
     './main.jsx',
-    './c.jsx',
-    './d.jsx',
+    //'./c.jsx',
+    //'./d.jsx',
   ],
   outdir: "./client",
   bundle: true,
   splitting: true,
-  sourcemap: "external",
+  sourcemap: "inline",
   format: "esm",
 });
 esbuild.stop();
